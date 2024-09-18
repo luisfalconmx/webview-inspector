@@ -1,0 +1,28 @@
+{
+  "name": "webview-inspector",
+  "version": "1.0.0",
+  "main": "expo/AppEntry.js",
+  "private": false,
+  "scripts": {
+    "start": "expo start --port 9000",
+    "start:wsl": "REACT_NATIVE_PACKAGER_HOSTNAME=$(node get_network_local_ip.js) expo start",
+    "deploy": "eas build --platform android --profile preview",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "~51.0.28",
+    "expo-status-bar": "~1.12.1",
+    "react": "18.2.0",
+    "react-native": "0.74.5",
+    "react-native-webview": "13.8.6",
+    "expo-location": "~17.0.1",
+    "expo-dev-client": "~4.0.26"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/react": "~18.2.45",
+    "typescript": "^5.1.3"
+  }
+}
